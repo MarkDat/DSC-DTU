@@ -1,0 +1,63 @@
+<!-- created by: Mark Dat, -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&amp;display=swap">
+        <script  src = " https://code.jquery.com/jquery-3.0.0.js " ></script>
+    </head>
+    <body>
+     <header> <a class="header-text" href="#"> Developer Student Club - DTU</a></header>
+     <section class="banner text-center">
+        <div class="banner-bg">
+            <div class="container">
+                <div class="info">
+                    <img src="./dsc_icon.png" id="logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="750px" height="100px" viewBox="0 0 700 100" enable-background="new 0 0 500 100" xml:space="preserve">
+                            <rect x="16.5" y="36.5" fill="none" width="467" height="27"/>
+                            <text class="draw" transform="matrix(1 0 0 1 46.4102 58.1563)" font-family="'Permanent Marker', cursive" font-size="50">developer student club</text>
+                    </svg>
+                    </br></br></br></br></br></br>
+                    <span class="wordsFly sayHi">Hi there !</span>
+                    <p class="wordsFly welcome">Welcome to DSC-DTU</p>
+                    <ul>
+                        <li><button>Join Us</button></li>
+                        <li><button>See more</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+     <script src="./js.js"></script>
+     <script src="./gsap.min.js"></script>
+     <script src="./SplitText.min.js"></script>
+     <script>
+         function random(min, max){
+                return (Math.random()*(max-min))+min;
+            }
+         //Logo
+         TweenMax.from($("#logo"),2,{
+             opacity:0,
+                     x:random(-500,500),
+                    y:random(0,500),
+                    z:random(-500,500)
+         });
+         // Random chu class: banner info
+            var text  = $(".wordsFly");
+            var split  = new SplitText(text);
+            
+
+            $(split.chars).each(function(i){
+                TweenMax.from($(this),2,{
+                    opacity:0,
+                    x:random(-500,500),
+                    y:random(-500,500),
+                    z:random(-500,500)
+                });
+            });
+     </script>
+    </body>
+    
+</html>

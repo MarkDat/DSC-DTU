@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 5000px;
+    font-family: 'Inconsolata', monospace;
+}
+header{
+    width: 100%;
+    height: 25px;
+    display: none;
+    background-color: #848484;
+    position: fixed; 
+    text-align: center;
+}
+.header-text{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+.banner{
+    color: white;
+    /* background: brown; */
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.banner .banner-bg{
+    background-image: url("./dsc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container{
+    background: rgba(12, 10, 10, 0.664);
+    width: 75%;
+    height: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banner .info{
+   text-align: left;
+   width: 100%;
+   height: 70%;
+   padding-top: 5%;
+   padding-bottom: 100px;
+   overflow: hidden;
+   line-height: 1em;
+}
+#logo{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    left: 45%;
+}
+.info .sayHi{
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+    padding: 10px;
+}
+li button{
+    width: 80px;
+    height: 40px;
+}
+.info .wordsFly{
+    position: relative;
+}
+svg{
+    position: relative;
+    left: 15%;
+    text-align: left;
+}
+
+.info .draw{
+    fill: transparent;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-dashoffset: 155;
+    stroke-dasharray: 150;
+    animation: animate 5s forwards;
+}
+@keyframes animate{
+    to{
+        fill: black;
+        stroke-dashoffset: 0;
+    }
+}
+@media only screen and (max-width: 480px){
+    .header-text{
+        font-size: 15px;
+    }
+  }
