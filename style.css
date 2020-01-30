@@ -11,6 +11,7 @@ header{
     background-color: #848484;
     position: fixed; 
     text-align: center;
+    z-index: 9999999;
 }
 .header-text{
     text-decoration: none;
@@ -59,6 +60,7 @@ header{
    overflow: hidden;
    line-height: 1em;
 }
+
 #logo{
     position: absolute;
     width: 90px;
@@ -69,16 +71,36 @@ header{
 .info .sayHi{
     font-size: 25px;
 }
-ul{
+.info .twoButton{
     list-style-type: none;
+    height: auto;
+    padding-left: 0;
 }
-li{
+.info .btn{
     float: left;
-    padding: 10px;
+    padding-right: 10px;
 }
-li button{
+.info .twoButton button{
+    color: white;
+    background: none;
     width: 80px;
     height: 40px;
+    border: 1px solid transparent;
+    border-color: white;
+}
+.info .twoButton button a{
+    text-decoration: none;
+}
+.info .twoButton .btn1{ transition: all 0.5s ease-in-out;  }
+.info .twoButton .btn2{ transition: all 0.6s ease-in-out;  }
+
+.info .twoButton button:hover{
+    transform: rotateX(360deg);
+    background-color: #FFF;
+    color: #111;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
 }
 .info .wordsFly{
     position: relative;
@@ -103,8 +125,9 @@ svg{
         stroke-dashoffset: 0;
     }
 }
-@media only screen and (max-width: 480px){
-    .header-text{
-        font-size: 15px;
+
+@media only all and (max-width: 1000px){
+    .info svg{
+        display: none;
     }
   }
