@@ -15,7 +15,7 @@
         <section class="banner text-center">
             <div class="banner-bg">
                 <div class="container">
-                    <div class="info">
+                    <div class="info hideShow">
                         <img src="./dsc_icon.png" id="logo">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 width="750px" height="100px" viewBox="0 0 700 100" enable-background="new 0 0 500 100" xml:space="preserve">
@@ -26,8 +26,8 @@
                         <span class="wordsFly sayHi">Hi there !</span>
                         <p class="wordsFly welcome">Welcome to DSC-DTU</p>
                         <ul class="twoButton">
-                            <li class="btn"><a href="#"><button class="btn1" >Join Us </button></a></li>
-                            <li class="btn"><a href="#"><button class="btn2">See more</button></a></li>
+                            <li class="btn"><a href="https://www.facebook.com/dsc.duytan/"><button class="btn1" >Join Us </button></a></li>
+                            <li class="btn"><a href="#" onclick="scrollDown()"><button class="btn2">See More</button></a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,6 +61,11 @@
                     z:random(-500,500)
                 });
             });
+
+           
+            function scrollDown(){
+                $("html, body").animate({scrollTop:700},400);
+            }
      </script>
     </body>
     
