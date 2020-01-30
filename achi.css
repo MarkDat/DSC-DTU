@@ -1,0 +1,13 @@
+.achi{
+    width: 100%;
+    height: 500px;
+    background: brown;
+}
+
+.achi .event{
+    width: 100%;
+    height: 200px;
+    background: green;
+    position: relative;
+    top: 30%;
+}
