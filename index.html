@@ -4,7 +4,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./style.css">
-        <link rel="stylesheet" type="text/css" href="./achi.css">
+        <link rel="stylesheet" type="text/css" href="./introduce.css">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&amp;display=swap">
         <script  src = " https://code.jquery.com/jquery-3.0.0.js " ></script>
@@ -17,7 +17,7 @@
                 <div class="container">
                     <div class="info hideShow">
                         <img src="./dsc_icon.png" id="logo">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg id="svgLogo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 width="750px" height="100px" viewBox="0 0 700 100" enable-background="new 0 0 500 100" xml:space="preserve">
                                 <rect x="16.5" y="36.5" fill="none" width="467" height="27"/>
                                 <text class="draw" transform="matrix(1 0 0 1 46.4102 58.1563)" font-family="'Permanent Marker', cursive" font-size="50">developer student club</text>
@@ -27,7 +27,7 @@
                         <p class="wordsFly welcome">Welcome to DSC-DTU</p>
                         <ul class="twoButton">
                             <li class="btn"><a href="https://www.facebook.com/dsc.duytan/"><button class="btn1" >Join Us </button></a></li>
-                            <li class="btn"><a href="#" onclick="scrollDown()"><button class="btn2">See More</button></a></li>
+                            <li class="btn" id="scollIntroduce" onclick="scrollToLocation('#scollIntroduce a')"><a href="#introduce"><button class="btn2">See More</button></a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,13 +35,35 @@
         </section>
         <!-- -------------------------------- -->
        
-        <!-- Achievement -->
-        <div class="achi">
-            <div class="event"></div>
-           
+        <!-- introduce -->
+        <div id="introduce">
+            <svg id="svgIntro" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="1349px" height="500px" viewBox="0 0 1349 500" enable-background="new 0 0 1349 500" xml:space="preserve">
+       <path  fill="none" stroke="#000000" stroke-miterlimit="10" d="M657.163,53.279c0.199,1.125,0.176,2.238-0.07,3.339
+           c-11.093,3.212-25.42,2.262-36.038-2.33c7.688-19.255,61.308-20.669,78.115-21.003c51.582-1.024,102.214-0.795,150.748,17.823
+           c13.672,5.245,37.43,8.123,29.396,28.676c-6.01,15.377-35.483,20.763-50.055,18.58c14.857-5.642,36.128-9.984,52.408-13.881
+           c37.915-9.075,78.097-5.592,116.621-12.423c41.49-7.357,77.124-3.765,118.122,3.584c11.728,2.102,51.497,8.134,45.321,30.012
+           c-2.24,7.935-15.917,14.226-23.14,16.486c-0.386,0.602-0.538,1.263-0.458,1.984c33.203,15.593,108.783,2.919,127.414,45.129
+           c9.548,21.63-3.794,46.575-23.033,57.174c-7.676,4.229-35.645,5.431-36.804,16.814c-0.495,4.862,8.646,14.358,11.086,17.804
+           c8.876,12.529,17.269,24.167,22.958,38.616c10.166,25.819,13.125,48.703-12.104,64.447c-58.46,36.479-142.071,20.607-206.686,21.545
+           c-28.266,0.411-56.127,3.933-84.333,4.654c-5.759,0.147-13.353-0.245-18.17,1.276c9.507,4.787,27.896,15.528,25.941,29.059
+           c-1.796,12.429-35.825,24.688-44.098,28.684c-27.646,13.351-55.11,29.594-84.889,37.966c-41.545,11.68-94.666,4.166-136.389-2.359
+           c-40.141-6.277-79.065-10.225-119.377-13.267c-9.816-0.741-31.16-2.92-32.696-15.841c11.543-3.464,44.52-5.896,48.784-15.164
+           c-42.599-2.293-85.194-0.75-127.848-1.094c-53.485-0.432-109.564-4.887-160.982-20.304c-16.796-5.296-33.325-11.318-49.587-18.067
+           c-8.301-3.483-29.061-9.682-33.848-18.813c-11.403-21.749,20.907-46.269,37.457-53.819c19.5-8.897,35.867-21.793,56.586-27.966
+           c6.969-2.076,14.466-3.856,21.131-6.527c3.731,17.34-93.042,10.991-103.908,7.622c-26.793-8.308-65.114-29.623-71.628-59.395
+           c-5.436-24.844,2.843-52.223,17.978-71.694c61.508-79.13,176.533-99.066,270.835-99.886c13.977-0.122,27.61-2.48,41.453-4.572
+           c29.239-4.419,55.728-16.606,83.959-23.042c11.058-2.521,63.436-6.435,67.266,6.685"/>
+            <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M86.232,57.93C72.774,70.575,50.219,59.543,64.7,44.883
+                c15.856-16.054,50.118-12.988,58.707,6.417c11.875,26.827-8.489,32.453-25.805,46.691c-14.704,12.09-24.327,39.293-18.346,57.614"/>
+            </svg>
+            <div class="intro tittle"><strong> What is the DSC ?</strong></div>
+            <div class="intro explain">Developer Student Clubs (DSC) are community groups for students from any academic background in their undergraduate or graduate term. By joining a DSC, students build their professional and personal network, get access to Google developer resources, and work together to build solutions for local problems in a peer-to-peer learning environment.
+            </div>
         </div>
         <!-- -------------------------------- -->
      <script src="./js.js"></script>
+     <script src="./setting.js"></script>
      <script src="./gsap.min.js"></script>
      <script src="./SplitText.min.js"></script>
      <script>
@@ -62,10 +84,8 @@
                 });
             });
 
-           
-            function scrollDown(){
-                $("html, body").animate({scrollTop:700},1000);
-            }
+
+                
      </script>
     </body>
     

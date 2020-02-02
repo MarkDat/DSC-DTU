@@ -106,7 +106,7 @@ header{
 .info .wordsFly{
     position: relative;
 }
-svg{
+#svgLogo{
     position: relative;
     left: 15%;
     text-align: left;
@@ -128,7 +128,11 @@ svg{
 }
 
 @media only all and (max-width: 1000px){
-    .info svg{
+    #svgLogo{
+        display: none;
+    }
+
+    #svgIntro{
         display: none;
     }
   }
