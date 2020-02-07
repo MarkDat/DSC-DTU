@@ -19,8 +19,9 @@
     }
 
     function showSvgJoin(pb){
-        if(pb>=817){
-            $(".display-svg-join").show();
+        if(pb>=850){
+            $(".display-svg-join").show();  
+            $(".joinWords").addClass('moveWords');;    
         }
     }
 

@@ -1,0 +1,102 @@
+#join{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background: rgb(230, 225, 225);
+}
+
+#svgJoin{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+#svgJoin text,tspan{
+    font-family: 'Inconsolata', monospace;
+}
+#personJoin{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1px;
+    stroke-dashoffset: 1500;
+    stroke-dasharray: 1500;
+    animation: svgJoin 4s forwards;
+}
+.display-svg-join{
+    display: none;
+}
+#join-question1{
+    animation: svgQuestionJoin1 3s forwards infinite;
+}
+#join-question2{
+    animation: svgQuestionJoin2 5s forwards infinite;
+}
+.joinWords{
+    display: none;
+}
+.moveWords{
+    display: block;
+    animation: moveW 1.5s forwards;
+}
+@keyframes moveW{
+    0%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes svgJoin{
+    to{
+        stroke-dashoffset: 0;
+    }
+    48%{
+        fill: transparent;
+    }
+    100%{
+        fill: black;
+    }
+}
+
+@keyframes svgQuestionJoin1{
+    0%{
+        transform: translate(-26px,-35px);
+    }
+    25%{
+        transform: translate(-25px,-12px);
+
+    }
+    50%{
+        transform: translate(-28px,-25px);
+    }
+    75%{
+        transform: translate(-55px,-12px);
+        
+    }
+    100%{
+        transform: translate(-26px,-35px);
+    
+    }
+}
+@keyframes svgQuestionJoin2{
+    0%{
+        transform: translate(45px,15px);
+        
+    }
+    25%{
+        transform: translate(60px,14px);
+       
+    }
+    50%{
+        transform: translate(35px,15px);
+      
+    }
+    75%{
+        transform: translate(32px,16px);
+      
+    }
+    100%{
+        transform: translate(45px,13px);
+    
+    }
+}
