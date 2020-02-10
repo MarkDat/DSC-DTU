@@ -1,5 +1,7 @@
 
-    $(window).scroll(function () { 
+    showAll($('html,body').scrollTop());
+  
+  $(window).scroll(function () { 
             var pos_body =  $('html,body').scrollTop();
             console.log(pos_body);
             if(pos_body>=150){
@@ -8,26 +10,87 @@
                 $("header").hide();
             }
             
-            showSvgIntro(pos_body);
-            showSvgJoin(pos_body)
+            showAll(pos_body);
     });
+  
+    
 
+    var posShowJoin =850;
+    var posShowTarget =1100;
+    var posShowActii = 1562;
+    function showAllPos(a,b,c){
+        posShowJoin = a; 
+        posShowTarget = b;
+        posShowActii = c;
+    }
     function showSvgIntro(pb){
         if(pb>=253){
             $(".display-svg-intro").show();
         }
     }
-
     function showSvgJoin(pb){
-        if(pb>=850){
+        if(pb>=posShowJoin){
             $(".display-svg-join").show();  
-            $(".joinWords").addClass('moveWords');;    
+            $(".joinWords").addClass('moveWords');
+        }
+    }
+    
+    function showSvgTarget(pb){
+        if(pb>=posShowTarget){
+            $(".display-svg-target").addClass("display-svg-target-appear");  
+            $(".wordsTarget").addClass('moveWordsTarget');
         }
     }
 
-//     $(window).resize(function(){
+    function showActi(pb){
+        if(pb>=posShowActii){
+            $(".actiHide").addClass('boxScale');   
+        }
+    }
 
-//         if ($(window).width() <= 1178) {  
-//             // $("#svgIntro").hide(); 
-//         }     
-//  });
+    function showContact(pb){
+        if(pb>=1950){
+            $(".ctContact").addClass('showContactt'); 
+            $(".showContactt").show();   
+        }
+    }
+
+    function showAll(pos_body){
+             showSvgIntro(pos_body);
+            showSvgJoin(pos_body);
+            showSvgTarget(pos_body);
+            showActi(pos_body);
+            showContact(pos_body);
+    }
+//Responsive screen
+    var check=true;
+    function checkResize(){
+        console.log($(window).width())
+        if ($(window).width() <= 600) {
+            if(check===true){   
+                // showJoin =500;
+                // showTarget =600;
+                // showActii = 858;
+                showAllPos(500,600,858);
+                    check=false;
+                    $(".reduceWidth").css('height', '-=280');
+                    //alert('dã tru')   
+            }      
+        }else{
+           
+            if(check===false){
+                showAllPos(850,1100,1562);
+                // showJoin =850;
+                // showTarget =1100;
+                // showActii = 1562;
+                check=true;
+                $(".reduceWidth").css('height', '+=280');
+        }        
+        }
+    }
+ 
+    $(window).resize(function(){
+        checkResize();
+ });
+
+ checkResize();

@@ -1,0 +1,35 @@
+#contact{ 
+    width: 100%;
+    height: 300px;
+    border-top: solid 1px black;
+    background-color:  rgb(230, 225, 225);
+}
+#contact .ctContact img{
+    width: 100px;
+    height: 100px;
+}
+#contact .ctContact{
+    position: relative;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: none;
+}
+#contact .showContactt{
+    animation: animateContact 2s forwards;
+}
+
+@keyframes animateContact{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media only all and (max-width: 860px){
+    #contact{
+        top: 320px; position: relative;
+    }
+  }

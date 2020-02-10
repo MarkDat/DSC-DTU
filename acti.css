@@ -1,0 +1,50 @@
+#acti{
+    width: 100%;
+    height: 450px;
+ 
+
+}
+.actiHide{
+    display: none;
+}
+.boxScale{
+    display: block;
+}
+#acti .titleActi{
+    text-align: center;
+    font-size: 30px;
+}
+.wrapper{
+   margin: .5vw;
+   font-size: 0;
+   display: flexbox;
+   flex-wrap: wrap;
+   flex-direction: column;
+   flex-flow: row wrap;
+   display: flex;
+
+}
+#acti .box{
+    text-align: center;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+    animation: scaleBoxs 2s forwards;
+}
+.textActi{
+    width: 100%;
+       height: 30px;
+       font-size: 20px;
+       text-align: center;
+}
+
+@keyframes scaleBoxs{
+    0%{
+        transform: scale(0); 
+    }
+    100%{
+        transform: scale(0.75);
+    }
+}
+
+

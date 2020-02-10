@@ -2,11 +2,51 @@
     width: 100%;
     height: 400px;
     text-align: center;
-    background: rgb(230, 225, 225);
+    /* background: rgb(230, 225, 225); */
 }
 #svgTarget{
     position: absolute;
     left: 0;
     width: 100%;
     height: auto;
+
+}
+.display-svg-target{
+    display: none;
+    stroke-dashoffset: 1500;
+    stroke-dasharray: 1500;
+  
+}
+.display-svg-target-appear{
+    display: block;
+    animation: svgCustomer 6s forwards ;
+}
+.wordsTarget{
+    display: none;
+}
+.moveWordsTarget{
+    display: block;
+    animation: moveTG 2s forwards;
+}
+#svgTarget text,tspan{
+    font-family: 'Inconsolata', monospace;
+}
+#g2593 path{
+    fill: #ffffff;
+}
+#g2581 path{
+    fill: #ffffff;
+}
+@keyframes svgCustomer{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes moveTG{
+    0%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
