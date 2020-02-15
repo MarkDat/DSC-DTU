@@ -28,8 +28,3 @@
         opacity: 1;
     }
 }
-@media only all and (max-width: 860px){
-    #contact{
-        top: 320px; position: relative;
-    }
-  }
