@@ -12,7 +12,7 @@
     height: auto;
 }
 #svgJoin text,tspan{
-    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Inconsolata', monospace; */
 }
 #personJoin{
     fill: transparent;

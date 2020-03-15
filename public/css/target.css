@@ -29,7 +29,7 @@
     animation: moveTG 2s forwards;
 }
 #svgTarget text,tspan{
-    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Inconsolata', monospace; */
 }
 #g2593 path{
     fill: #ffffff;

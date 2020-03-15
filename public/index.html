@@ -16,17 +16,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>DSC-DTU</title>
+        <link rel="SHORTCUT ICON" href="./pt/icon/dsc_icon.png">
+        <link rel="stylesheet" type="text/css" href="./css/loadWeb.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/target.css">
         <link rel="stylesheet" type="text/css" href="./css/join.css">
         <link rel="stylesheet" type="text/css" href="./css/introduce.css">
         <link rel="stylesheet" type="text/css" href="./css/acti.css">
         <link rel="stylesheet" type="text/css" href="./css/contact.css">
+        <link rel="preconnect" href="//fonts.googleapis.com" crossorigin="">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&amp;display=swap">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <script src=" https://code.jquery.com/jquery-3.0.0.js " ></script>
     </head>
     <body>
+        <div id="loadWeb" aria-checked="false">
+                <div id="main">
+                    <img src="./pt/icon/dsc_icon.png" alt=""><span>Loading...</span>
+                </div>
+        </div>
      <header> <a class="header-text" href="#"> Developer Student Club - DTU</a></header>
         <!-- Phần này là cái mở màn nè -->
         <section class="banner text-center">
@@ -85,9 +94,9 @@
 	c-12.905,3.439-35.279,12.127-44.742,20.997"/>
 
 <rect x="260.401" y="209.589" fill="none" width="884.199" height="165.822"/>
-<text transform="matrix(1 0 0 1 270.5 225.5488)"><tspan x="0" y="0" font-family="'Inconsolata-Regular'" font-size="24">Developer Student Clubs (DSC) are community groups for students from any </tspan><tspan x="-6" y="28.8" font-family="'Inconsolata-Regular'" font-size="24">academic background in their undergraduate or graduate term. By joining a </tspan><tspan x="6" y="57.6" font-family="'Inconsolata-Regular'" font-size="24">DSC, students build their professional and personal network, get access </tspan><tspan x="6" y="86.399" font-family="'Inconsolata-Regular'" font-size="24">to Google developer resources, and work together to build solutions for </tspan><tspan x="108" y="115.2" font-family="'Inconsolata-Regular'" font-size="24">local problems in a peer-to-peer learning environment.</tspan></text>
+<text transform="matrix(1 0 0 1 270.5 225.5488)"><tspan x="0" y="0"  font-size="24">Developer Student Clubs (DSC) are community groups for students from any </tspan><tspan x="-6" y="28.8"  font-size="24">academic background in their undergraduate or graduate term. By joining a </tspan><tspan x="6" y="57.6"  font-size="24">DSC, students build their professional and personal network, get access </tspan><tspan x="6" y="86.399"  font-size="24">to Google developer resources, and work together to build solutions for </tspan><tspan x="108" y="115.2"  font-size="24">local problems in a peer-to-peer learning environment.</tspan></text>
 <rect x="564" y="137.75" fill="none" width="263" height="26.5"/>
-<text transform="matrix(1 0 0 1 568 157.6997)" font-family="'Inconsolata-Regular'" font-size="30">What is the DSC ?</text>
+<text transform="matrix(1 0 0 1 568 157.6997)"  font-size="30">What is the DSC ?</text>
             </svg>
         </div>
         <!-- -------------------------------- -->
@@ -553,9 +562,9 @@
             </g>
             <g class="wordsTarget">
             <rect x="60.622" y="221.585" fill="none" width="698.965" height="116"/>
-            <text transform="matrix(1 0 0 1 62.1045 237.5449)"><tspan x="0" y="0" font-family="'Inconsolata-Regular'" font-size="24">DSC activities are targeted at University students but not </tspan><tspan x="6" y="28.8" font-family="'Inconsolata-Regular'" font-size="24">limited to those who want to learn more on IT development </tspan><tspan x="30" y="57.6" font-family="'Inconsolata-Regular'" font-size="24">skills &amp; interested to solve real-life problems using </tspan><tspan x="282" y="86.399" font-family="'Inconsolata-Regular'" font-size="24">technology.</tspan></text>
+            <text transform="matrix(1 0 0 1 62.1045 237.5449)"><tspan x="0" y="0"  font-size="24">DSC activities are targeted at University students but not </tspan><tspan x="6" y="28.8"  font-size="24">limited to those who want to learn more on IT development </tspan><tspan x="30" y="57.6"  font-size="24">skills &amp; interested to solve real-life problems using </tspan><tspan x="282" y="86.399"  font-size="24">technology.</tspan></text>
             <rect x="241.363" y="159.369" fill="none" width="319.484" height="30.749"/>
-            <text transform="matrix(1 0 0 1 288.6046 179.3188)" font-family="'Inconsolata-Regular'" font-size="30">Target Audience</text>
+            <text transform="matrix(1 0 0 1 288.6046 179.3188)"  font-size="30">Target Audience</text>
             </g>
         </svg>
         </div>
@@ -601,29 +610,11 @@
                 </div>
         </div>
         <!-- -------------------------------- -->
+        <link rel="stylesheet" type="text/css" href="./css/setFont.css">
      <script src="./js/js.js"></script>
      <script src="./js/gsap.min.js"></script>
      <script src="./js/SplitText.min.js"></script>
-     
-
-     <script>
-         function random(min, max){
-                return (Math.random()*(max-min))+min;
-            }
-         // Random chu class: banner info
-            var text  = $(".wordsFly");
-            var split  = new SplitText(text);
-            $(split.chars).each(function(i){
-                TweenMax.from($(this),2,{
-                    opacity:0,
-                    x:random(-500,500),
-                    y:random(-500,500),
-                    z:random(-500,500)
-                });
-            });  
-            
-           
-     </script>
+     <script src="./js/js1.js"></script>
         
     </body>
     

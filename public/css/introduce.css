@@ -16,10 +16,7 @@
 .display-svg-intro{
     display: none;
 }
-#svgIntro text,tspan{
-    font-family: 'Inconsolata', monospace;
 
-}
 #svgIntro path:nth-child(1){
     fill: transparent;
     stroke: black;
