@@ -25,3 +25,31 @@
     position: relative;
     left: 5%;
 }
+
+#dinoRun{
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    background: url('../pt/ani/dinoRun_burned.png') no-repeat -30px -7px;
+    width: 121px;
+    height: 133px;
+    animation: dinoRun 0.5s steps(6) infinite;
+}
+
+@keyframes dino{
+    from{
+        background-position: -1866px;
+    }
+    to{
+        background-position: -2102px;
+    }
+}
+
+@keyframes dinoRun{
+    from{
+        background-position: -30px;
+    }
+    to{
+        background-position: -1180px;
+    }
+}
